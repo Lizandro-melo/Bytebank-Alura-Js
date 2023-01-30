@@ -1,16 +1,8 @@
-import { ContaCorrente } from "./ContaCorrente.js";
- 
-export class Cliente{
-    _nome;
-    _cpf;
-    _rg;
-    _cc = new ContaCorrente(1001,0);
-    
+ export class Cliente{
 
-    constructor(nome, cpf, rg){
+    constructor(nome, cpf){
         this._nome = nome;
         this._cpf = cpf;
-        this._rg = rg;
     }
 
     get nome(){
@@ -23,13 +15,5 @@ export class Cliente{
 
     get cpf(){
         return this._cpf;
-    }
-
-    get rg(){
-        return this._rg;
-    }
-
-    get cc(){
-        return this._cc
     }
 }
