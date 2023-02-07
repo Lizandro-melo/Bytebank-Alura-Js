@@ -2,8 +2,8 @@ import { Cliente } from "./Cliente.js";
 
 export class Conta{
     
-    constructor(saldoinicial, cliente, agencia){
-        this._saldo = saldoinicial;
+    constructor(saldoInicial, cliente, agencia){
+        this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
     }
